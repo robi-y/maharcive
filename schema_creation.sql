@@ -10,7 +10,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION 's3://refa-hack1/radar/'
+LOCATION './radar/'
 TBLPROPERTIES (
     'skip.header.line.count'='1',
     'serialization.encoding'='UTF-8'
@@ -24,7 +24,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION 's3://refa-hack1/flights/'
+LOCATION './flights/'
 TBLPROPERTIES (
     'skip.header.line.count'='1',
     'serialization.encoding'='UTF-8'
